@@ -63,6 +63,7 @@ export class FavouritesView extends Favourites {
         this.onadd()
     }
 
+
     onadd() {
         const addButton = this.root.querySelector('.search button')
         addButton.onclick = () => {
@@ -74,6 +75,7 @@ export class FavouritesView extends Favourites {
 
     update() {
         this.removeAllTr()
+        this.emptyMessage()
 
         this.entries.forEach( user => {
             const row = this.createRow()
@@ -129,4 +131,13 @@ export class FavouritesView extends Favourites {
             tr.remove()
         })
     }
+
+    emptyMessage() {
+        if (this.entries.length === 0) {
+            this.root.querySelector('.empty-container').classList.remove('hide')
+          } else {
+            this.root.querySelector('.empty-container').classList.add('hide')
+          }
+        }
+    
 }

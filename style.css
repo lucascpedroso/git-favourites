@@ -103,8 +103,7 @@ span {
 
 
 #search-button:hover {
-    background-color: #eeee;
-    color: var(--button-bg-color);
+    background-color: rgba(6, 93, 122, 0.616)
 }
 
 table {
@@ -179,15 +178,21 @@ td .remove {
     cursor: pointer;
 }
 
-.no-favourites {
+.empty-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6rem;
     
     color: hsla(189, 4%, 32%, 1);
+    height: 40rem;
+    width: 112rem;
+
+    background: var(--empty-container-bg-color);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
-.hiden {
+.hide {
     display: none;
 }
