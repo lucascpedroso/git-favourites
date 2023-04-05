@@ -103,7 +103,12 @@ span {
 
 
 #search-button:hover {
-    background-color: rgba(6, 93, 122, 0.616)
+    background-color: #FFFFFF;
+    color: #065E7C;
+}
+
+#search-button:hover svg path {
+    fill: #065E7C;
 }
 
 table {
